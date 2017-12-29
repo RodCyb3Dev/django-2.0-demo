@@ -8,12 +8,20 @@ The new django.urls.path() function allows a simpler, more readable URL routing 
 OR 
 Django 2.1 release notes - UNDER DEVELOPMENT.
 https://docs.djangoproject.com/en/dev/releases/2.1/
+# One of the Changes is;
+Simplified URL routing syntax. 
+The new django.urls.path() function allows a simpler, more readable URL routing syntax. 
+# For example, 
+this example from previous Django releases:  
+$ url(r'^articles/(?P<year>[0-9]{4})/$', views.year_archive), 
+# could be written as:  
+$ path('articles/<int:year>/', views.year_archive),
 
-
-                        *******************************************
-                        *         HOW TO INSTALL DJANGO           *  
-                        *            STEP BY STEP                 *
-                        *******************************************      
+# Lets Try
+*******************************************
+*         HOW TO INSTALL DJANGO           *  
+*            STEP BY STEP                 *
+*******************************************      
 $ mkdir project-folder                
 $ cd project-folder
 $ easy_install pip  (If you don't ready have it.)
