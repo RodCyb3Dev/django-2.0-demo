@@ -13,14 +13,14 @@ Simplified URL routing syntax.
 The new django.urls.path() function allows a simpler, more readable URL routing syntax. 
 For example, 
 this example from previous Django releases:<br>
-$ url(r'^articles/(?P<year>[0-9]{4})/$', views.year_archive), 
+$ url(r'^articles/(?P<year>[0-9]{4})/$', views.year_archive)<br>
 could be written as:<br>
 $ path('articles/<int:year>/', views.year_archive),
 
 # Lets Try
 
-        HOW TO INSTALL DJANGO             
-            STEP BY STEP                 
+        HOW TO INSTALL DJANGO<br>             
+            STEP BY STEP<br>                
      
 $ mkdir project-folder<br>              
 $ cd project-folder<br>
@@ -36,22 +36,22 @@ $ source bin/activate<br>
 On Windows<br>
 $ .\Scripts\activate
 
-Running pip freeze will allow you to see the file on your VirtualEnv
-$ pip freeze
+Running pip freeze will allow you to see the file on your VirtualEnv<br>
+$ pip freeze<br>
 $ ls
 
-Now you Can Install Django
+Now you Can Install Django<br>
 $ pip install django==2.0
 
-Then Run
+Then Run<br>
 $ pip freeze ( **Notice that now it in Says Django==2.0** )
 
-To Create Your Project Run
-$ django-admin.py startproject AddName
-$ cd AddName
+To Create Your Project Run<br>
+$ django-admin.py startproject AddName<br>
+$ cd AddName<br>
 $ ls
 
-To Create Apps in the Project
+To Create Apps in the Project<br>
 $ django-admin.py startapp AppName
 
 Here you should see manage.py file that means you'r in the root dir
