@@ -12,9 +12,9 @@ One of the Changes is;
 Simplified URL routing syntax. 
 The new django.urls.path() function allows a simpler, more readable URL routing syntax. 
 For example, 
-this example from previous Django releases:  
+this example from previous Django releases:<br>
 $ url(r'^articles/(?P<year>[0-9]{4})/$', views.year_archive), 
-# could be written as:  
+could be written as:<br>
 $ path('articles/<int:year>/', views.year_archive),
 
 # Lets Try
@@ -22,18 +22,18 @@ $ path('articles/<int:year>/', views.year_archive),
         HOW TO INSTALL DJANGO             
             STEP BY STEP                 
      
-$ mkdir project-folder                
-$ cd project-folder
-$ easy_install pip  (If you don't ready have it.)
-$ pip install virtualenv
-$ virtualenv tryTen
+$ mkdir project-folder<br>              
+$ cd project-folder<br>
+$ easy_install pip  (If you don't ready have it.)<br>
+$ pip install virtualenv<br>
+$ virtualenv tryTen<br>
 $ cd tryTen
 
-To Activate The Virtual Env
-OSX/Linux
-$ source bin/activate
+To Activate The Virtual Env<br>
+OSX/Linux<br>
+$ source bin/activate<br>
 
-On Windows
+On Windows<br>
 $ .\Scripts\activate
 
 Running pip freeze will allow you to see the file on your VirtualEnv
